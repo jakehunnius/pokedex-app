@@ -1,0 +1,18 @@
+## Author
+
+- **Name:** Jake Hunnius
+- **Email:** hunnius2@illinois.edu
+
+## Purpose
+
+The purpose of this app is to make it easy for the user to compare Pokémon. It makes it easier to compare base stats of every Pokémon from generation 1 up to generation 9, the current generation. It outputs all base stats in both a visual and tabular way, which makes it quick and easy to see the differences in stats. If a user wanted to have a Pokémon with high HP, it could quickly and easily compare a new Pokémon's HP with another Pokémon's HP. This can be used to plan teams before a playthrough of a Pokémon Title. There are a couple of cool things to look at with this app. One cool thing is that you can use the barplot to compare the same Pokémon with two different forms, or compare two different Pokémon, and the barplot reacts accordingly to the selection. The table has two checkboxes that filter the data. If both are left unchecked it shows every single Pokémon. If you wanted just the base forms, all you have to do is make sure you have two Pokémon's base forms selected, and click the "Filter Table to Selected Forms" button, but don't click the "Filter Table to Selected Names". If you wanted every possible form of the two Pokémon you selected, click the "Filter Table to Selected Names" button, but don't click the "Filter Table to Selected Forms". If you want the specific name and form combination of both Pokémon that you selected, click both buttons.
+
+## Data
+
+The original data contained 13 columns, I added a 14th column to rank pokemon by strength. The columns are ID, which is the Pokédex number of the Pokémon. The name of the Pokémon. Their form, which can change their base stats based on the Pokémon game this Pokémon was in. Their typing(s), so a Pokémon has anywhere from 1 to 2 base types. Their base stats which are: HP, Attack, Defense, Special Attack, Special Defense, and Speed. The data also contains the Total column, which is the sum of all the base stats. I added the rating column, this column takes influence from OPS+, and rates the total strength of a Pokémon. The calculation for this is 100*((Total/avgTotal)+(Attack/avgAttack)+(SpAttack/avgSpAttack) - 1).
+
+## References
+
+- [Baseball-Reference: Formula for OPS+](https://www.baseball-reference.com/bullpen/OPS#:~:text=The%20formula%20for%20OPS%2B%20is,that%20statistic%20in%20that%20year.)
+
+- [lgreski's Pokémon Dataset](https://github.com/lgreski/pokemonData/blob/master/Pokemon.csv)
